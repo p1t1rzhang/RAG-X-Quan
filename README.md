@@ -28,7 +28,7 @@ Momentum Strategy with Local RAG — 將量化動能策略與在地檢索增強�
 1. **準備環境**  
    安裝必要套件：  
    ```bash
-   pip install langchain langchain-community langchain-ollama faiss-cpu pypdf pymupdf
+   python3 -m pip install langchain langchain-community langchain-ollama faiss-cpu pypdf pymupdf
 2. **放置文件**
     將 PDF/TXT/Markdown 檔案放到 RAG_DATA_DIR 資料夾。
 	或自行指定路徑： export RAG_DATA_DIR=/path/to/your/docs
