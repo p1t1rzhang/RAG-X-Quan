@@ -5,7 +5,7 @@ Momentum Strategy with Local RAG — 將量化動能策略與在地檢索增強�
 
 # Local RAG Pipeline
 
-這個專案提供一個 **在地 RAG (Retrieval-Augmented Generation)** 的最小可行實作，支援本地 PDF / TXT / Markdown 檔案，並透過 **FAISS 向量資料庫 + Ollama 模型** 完成檢索與問答。主要功能包括：📂 多格式文件支援 (PDF、TXT、Markdown)、🔎 文件切分 (`RecursiveCharacterTextSplitter`)，確保檢索單位合理、🧠 在地模型推理 (Embedding 預設 `bge-m3:latest`，可換 `nomic-embed-text`；Chat 預設 `gpt-oss:20b`，可改成本地 Ollama 模型)、💾 向量儲存 (使用 FAISS 建立/更新索引)、⚡ 快速檢索 (從本地文件找到相關段落，再交給 ChatOllama 回答)。  
+這個專案提供一個 **在地 RAG (Retrieval-Augmented Generation)** 的最小可行實作，支援本地 PDF / TXT / Markdown 檔案，並透過 **FAISS 向量資料庫 + Ollama 模型** 完成檢索與問答。主要功能包括：📂 多格式文件支援 (PDF、TXT、Markdown)、 文件切分 (`RecursiveCharacterTextSplitter`)，確保檢索單位合理、 在地模型推理 (Embedding 預設 `bge-m3:latest`，可換 `nomic-embed-text`；Chat 預設 `gpt-oss:20b`，可改成本地 Ollama 模型)、 向量儲存 (使用 FAISS 建立/更新索引)、快速檢索 (從本地文件找到相關段落，再交給 ChatOllama 回答)。  
 
 
 **為什麼不直接向大型LLM提問？**
